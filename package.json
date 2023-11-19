@@ -1,0 +1,20 @@
+{
+  "name": "crypto-news-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm start\" \"cd frontend && npm run dev\"",
+    "install-all": "npm install concurrently && concurrently \"npm install\" \"npm install --prefix ./backend\" \"npm install --prefix ./frontend\""
+  },
+  "dependencies": {
+    "concurrently": "^6.5.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  },
+  "engines": {
+    "node": ">=19.0.0"
+  }
+}
